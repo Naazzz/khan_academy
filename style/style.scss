@@ -1,5 +1,8 @@
 $maincolor:#eeeeee;
 $contentcolor:#fafafa;
+$background_color:#ee6e73;
+$hovercolor:#757575;
+$lightblue:#64b5f6 ;
 body{
 	background-color:$maincolor;
 }
@@ -111,7 +114,7 @@ body{
 	
 	.container{
 		width: 80%;
-		height: 100%;
+		// height: 100%;
 
 	}
 	h5{
@@ -124,6 +127,7 @@ body{
 	}
 
 .page-footer{
+	margin-top:0px;
 	.footer-copyright{
 
 		height: 100px;
@@ -140,4 +144,99 @@ body{
 	}
 	// background-color:$contentcolor;
 }
+}
+
+// topic page.....................................
+
+.topic_name{
+	width:100%;
+	height: 130px;
+	background-color:$background_color;
+	border-top:1px solid $maincolor;
+	h2{
+		color: white;
+		text-align: center;
+	}
+}
+
+.body_content{
+	background-color:$contentcolor;
+	.container{
+		width: 85%;
+		// border:2px solid blue;
+		.default_row{
+			width: 100%;
+			padding:40px 0px;
+			border-bottom:2px solid $maincolor;
+		}
+		// .recommended{
+		// 	.row{
+		// 		div{
+		// 			width: 19%;
+		// 			display: inline-block;
+		// 			margin-left: 5px;
+		// 			margin-top: 0px;
+		// 			div{
+		// 				width:100%;
+		// 				height: 20%;
+		// 				background-color:black;
+		// 			}
+
+		// 		}
+		// 	}
+		// }
+
+		.recommended{
+			.row{
+				div{
+					margin-right: 25px;
+					margin-top: 0px;
+					div{
+						width:115%;
+						height: 115px;
+						background-color:black;
+					}
+
+				}
+			}
+		}
+		.intro{	
+				button{
+					background-color: transparent;
+					color: $lightblue ;
+					border:1px solid ;
+					border-radius:3px;
+					font-size: 12px;
+					padding:9px;
+				}
+				button:hover{
+					color: $hovercolor ;
+					border:1px solid $hovercolor  ;
+				}
+		}
+		.content_1{
+			img{
+				width: 70%;
+			    height: 9%;
+			    border-radius: 65%;
+			}
+			a{
+				display: block;
+				color:$hovercolor;
+			}
+			.col:hover{
+				color:$lightblue;
+			}
+			a:hover{
+				text-decoration: underline;
+				color:$lightblue ;
+				}
+		}
+		.question{
+			span{
+				margin-left: 10px;
+			}
+		}
+
+	}
 }
